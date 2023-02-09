@@ -1,0 +1,294 @@
+body {
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: beige;
+}
+
+p {
+  padding: 5px;
+}
+
+@font-face {
+  font-family: Pompadur; /* Гарнитура шрифта */
+  src: url(fonts/Pompadur.ttf); /* Путь к файлу со шрифтом */
+ }
+
+ h1 {
+  font-family: Pompadur, 'Comic Sans MS', cursive;
+ }
+
+/*Header*/
+
+header {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  background-color: black;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+a {
+  color: beige;
+  font-size: 20px;
+  font-weight: bold;
+  max-width: fit-content;
+  text-decoration: none;
+}
+
+a:hover {
+  color: azure;
+  text-shadow: 0 0 40px azure;
+}
+
+h1 {
+  color: beige;
+  text-align: center;
+  text-shadow: 0 0 40px azure;
+}
+
+h2 {
+  align-self: center;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/*First Caption*/
+
+.row1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 0.3fr 0.6fr;
+
+}
+
+.first__caption {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  text-align: center;
+}
+
+.btn {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  text-align: center;
+  align-self: start;
+}
+
+.btn__caption {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  background-color: #ecdac3;
+  border: 1px solid;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 50px;
+}
+
+.btn__caption:hover {
+  color: azure;
+  box-shadow: 0 0 20px goldenrod;
+}
+
+
+
+.items {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  text-align: center;
+}
+
+.item {
+  display: inline-block;
+  width: 300px;
+  height: auto;
+}
+
+
+
+
+
+/*Second Caption*/
+
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+
+.second__caption {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+}
+
+#input {
+  padding: 15px;
+  background-color: azure;
+  border: 1px solid;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 50px;
+}
+
+.btn__add {
+  padding: 15px;
+  background-color: #ecdac3;
+  border: 1px solid;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 50px;
+}
+
+.btn__delete {
+  padding: 15px;
+  background-color: #ae9576;
+  border: 1px solid;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 50px;
+}
+
+.btn__add:hover {
+  color: azure;
+  box-shadow: 0 0 20px goldenrod;
+}
+
+.btn__delete:hover {
+  color: azure;
+  box-shadow: 0 0 20px goldenrod;
+}
+
+.candle {
+  width: 200px;
+  height: 200px;
+}
+
+/*Third Caption*/
+
+.row3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.5fr 1fr;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+
+.third__caption__one {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.third__caption__two {
+  grid-column: 1 / 2;
+  grid-row: 2 / 2;
+}
+
+.star__row {
+  grid-column: 1 / 2;
+  grid-row: 3 / 3;
+}
+
+.btn__clone__star {
+  padding: 15px;
+  background-color: #ecdac3;
+  border: 1px solid;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 50px;
+}
+
+.btn__clone__star:hover {
+  color: azure;
+  box-shadow: 0 0 20px goldenrod;
+}
+
+.star {
+  width: 150px;
+  height: 150px;
+}
+
+/*Footer*/
+
+footer {
+  position: relative;
+  background-color: black;
+  height: 70px;
+}
+
+footer p {
+  padding: 15px;
+  color: beige;
+}
+
+@media (max-width: 391px) {
+  .first__caption {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .btn__clone__caption {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
+  .row2 {
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .row3 {
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .candle {
+    width: 30%;
+    height: 30%;
+  }
+
+  .star {
+    width: 40%;
+  }
+}
+
+/* @media (min-width: 768px) {
+  .first__caption {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .btn__clone__caption {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
+  img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .candle {
+    width: 30%;
+    height: 30%;
+  }
+
+  .star {
+    width: 30%;
+    height: 30%;
+  }
+} */

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Немного магии!</title>
+  </head>
+  <body>
+    <header>
+      <h1>«Магия света»</h1>
+    
+      <nav>
+        <a href="#first">Наши преимущества</a>
+        <a href="#second">Наши товары</a>
+        <a href="#third">Обратная связь</a>
+      </nav>
+    </header>
+
+    <container>
+      <!--First Section-->
+
+      <div class="row1">
+        <h2 class="first__caption" id="first">Наши преимущества</h2>
+
+        <!-- Add and Delete Captions -->
+
+        <div class="btn">
+          <button class="btn__caption" onclick="cloneCaption()">Клонировать раздел</button>
+          <button class="btn__caption" onclick="deleteCaption()">Удалить раздел</button>
+        </div>
+
+      
+        <div class="items">
+
+          <div class="item" id="firstElement">
+            <img class="icons" src="img/element1.png" alt="icon" />
+            <h3>БОЛЬШОЙ ОПЫТ</h3>
+            <p>
+              У нас есть большой опыт в изготовлении свечей ручной работы. Мы
+              постоянно совершенствуемся и ищеем новые возможности для того чтобы
+              и дальше радовать вас нашей продукцией. У нас есть большой опыт в изготовлении свечей ручной работы. Мы
+              постоянно совершенствуемся и ищеем новые возможности для того чтобы
+              и дальше радовать вас нашей продукцией.
+            </p>
+          </div>
+          <div class="item" id="secondElement">
+            <img class="icons" src="img/element2.png" alt="icon" />
+            <h3>КОНТРОЛЬ КАЧЕСТВА</h3>
+            <p>
+              Мы очень строго следим за качеством нашей продукции. Используем
+              самое современное оборудование и технологии производства. Внутренний
+              контроль качества. Мы очень строго следим за качеством нашей продукции. Используем
+              самое современное оборудование и технологии производства. Внутренний
+              контроль качества.
+            </p>
+          </div>
+          <div class="item" id="thirdElement">
+            <img class="icons" src="img/element3.png" alt="icon" />
+            <h3>БЕЗОПАСНОСТЬ</h3>
+            <p>
+              Мы используем только натуральные материалы. Наше производство экологически чистое. Всё используемые ингредиенты являются гипоаллегренныеми. Мы используем только натуральные материалы. Наше производство экологически чистое. Всё используемые ингредиенты являются
+              гипоаллегренныеми.  Мы используем только натуральные материалы. 
+             
+            </p>
+          </div>
+
+        </div>
+
+
+        
+      </div>
+      <!--Second Section-->
+      <div class="row2">
+        <div class="second__caption">
+          <h2 id="second">Наши товары</h2>
+          <h3>Выберете сколько свечей вы хотите заказать!</h3>
+          <div class="text__row">
+            <input value="1" id="input" type="text" />
+            <br />
+            <button class="btn__add" onclick="readInput1()">
+              Добавить свечи
+            </button>
+            <button class="btn__delete" onclick="readInput2()">
+              Убрать свечи
+            </button>
+          </div>
+        </div>
+        <div class="candle__row">
+          <img class="candle" src="img/candle.png" alt="candle" />
+          <img class="candle" src="img/candle.png" alt="candle" />
+        </div>
+      </div>
+      <!--Third Section-->
+      <div class="row3">
+        <div class="third__caption__one">
+          <h2 id="third">Обратная связь</h2>
+          <p>
+            Для нас очень важно мнение каждого клиента, поэтому мы стремимся
+            получать как можно большо обратной связи от вас. На данной странице
+            мы предлагаем вам выразить свое отношение к качеству наших услуг с
+            помощью кнопки для звездочек. Количество нажатий даст нам понять
+            насколько хорошо мы для вас потрудились.
+          </p>
+        </div>
+        <div class="third__caption__two">
+          <h3>Оцените нашу работу количеством звездочек:</h3>
+          <button class="btn__clone__star" onclick="addStar()">Добавить звездочку!</button>
+          <button class="btn__clone__star" onclick="removeStar()">Убрать звездочку :(</button>
+        </div>
+          <div class="star__row">
+            <img class="star" src="img/star.png" alt="star" />
+            <img class="star" src="img/star.png" alt="star" />
+            <img class="star" src="img/star.png" alt="star" />
+        </div>
+        <h3>Заранее спасибо!</h3>
+      </div>
+    </container>
+
+    <footer>
+      <p>
+        Если у вас остались вопросы то вы можете связаться с нами по телефону:
+        +7 800-900-00-00 или написать письмо на нашу электронную почту:
+        info@lmagic.ru.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
